@@ -1,0 +1,82 @@
+@import "colors";
+body {
+  background-color: $color-primary;
+  main {
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2em auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    p {
+      color: $color-text;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    h1 {
+      font-family: "Big Shoulders Display", cursive;
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+    .sedans {
+      background-color: $color-orange;
+      button {
+        color: $color-orange;
+        &:hover {
+          background-color: $color-orange;
+          color: $color-primary;
+        }
+      }
+    }
+    .suvs {
+      background-color: $color-cyan;
+      button {
+        color: $color-cyan;
+        &:hover {
+          background-color: $color-cyan;
+          color: $color-primary;
+        }
+      }
+    }
+    .luxury {
+      background-color: $color-dark-cyan;
+      button {
+        color: $color-dark-cyan;
+        &:hover {
+          background-color: $color-dark-cyan;
+          color: $color-primary;
+        }
+      }
+    }
+    .main_content {
+      width: 80%;
+      margin: 2em auto;
+      button {
+        border-radius: 30px;
+        height: 40px;
+        width: 130px;
+        border-style: solid;
+        border-color: $color-primary;
+        margin-top: 4em;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60%;
+      min-width: 700px;
+      margin: 0;
+      transform: translate(-50%, -50%);
+      flex-direction: row;
+    }
+  }
+}
